@@ -3,4 +3,18 @@ $body-color: slateblue;
 body {
   color: $body-color;
   font-family: sans-serif;
+
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.column {
+  background-color: aqua;
+}
+.card {
+  background-color: blue;
+  
 }
