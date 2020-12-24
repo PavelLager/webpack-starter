@@ -4,7 +4,7 @@ if (process.env.NODE_ENV === 'development') {
   require('../index.html');
 }
 
-console.log('webpack starterkit');
+
 
 
 let column = [
@@ -33,14 +33,18 @@ let card = [
 
   function addCard(column) {
     let addCards = document.querySelector('.column'); 
+    if (column.id == card.id) {
     addCards.innerHTML += `<div class="card" id:${card.id}>${column.name}</div>`;
+    }
    }
   
   for (let i = 0; i < column.length; i++) {
     debugger;
-    addColumn(column[i]); 
+    addColumn(column[i], card[i]); 
+    for (let i = 0; i < card.length; i++) {
+      if (column[i].id == card[i].id) {
+      addCard(card[i]);
+      } 
+    }
  }
 
- for (let i = 0; i < card.length; i++) {
-  addCard(card[i]); 
-}
