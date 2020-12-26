@@ -38,8 +38,22 @@ function addColumn(column) {
   addCol.innerHTML += `<div class="column" id:${column.id}>${column.name}</div>`;
 }
 
-function addCards(cards) {
-  let addCards = document.querySelector('.column');
+// function addCards(cards, column) { 
+//   let cardColumn = cards.columnId;
+//   let addCards = document.querySelectorAll('.column');
+//   addCards.filter(function(e){
+//     return column.id === cardColumn;
+//   })
+  
+//   addCards.innerHTML += `<div class="card" id:${cards.id}>${cards.description}</div>`;
+// }
+
+function addCards(cards, column) { 
+  let cardColumn = cards.columnId;
+  let addCards = document.querySelectorAll('.column');
+  for(let i = 0; i < addCards.length; i++){
+    addCards[i].id === cardColumn;
+  }
   addCards.innerHTML += `<div class="card" id:${cards.id}>${cards.description}</div>`;
 }
 
