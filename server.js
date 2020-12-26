@@ -12,9 +12,9 @@ var columns = [
 ]; //  {id: number, name: string, order: number},
 var columnId = 3;
 var cards = [
-  {id: 0, description: 'rewgdfsvg', value: 1},
-  {id: 1, description: 'r34f34f34', value: 2},
-  {id: 2, description: 'f34f34f34', value: 3},
+  {id: 0, description: 'rewgdfsvg', columnId: 1, userId: 3},
+  {id: 1, description: 'r34f34f34', columnId: 3, userId: 3},
+  {id: 2, description: 'f34f34f34', columnId: 2, userId: 3},
 ]; // { id: 1, description: "qweqwr", value: 1 },
 var cardsId = 3;
  users = [
